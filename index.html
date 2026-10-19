@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#101014" />
+    <meta
+      name="description"
+      content="A little thought for your day. Discover a fresh dose of perspective from The Clover Print."
+    />
+    <meta property="og:title" content="A Thought for You — The Clover Print" />
+    <meta
+      property="og:description"
+      content="Pause for a thought. Carry it into your day."
+    />
+    <meta property="og:type" content="website" />
+    <title>A Thought for You — The Clover Print</title>
+    <link rel="icon" href="./favicon.png" type="image/png" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./config.js"></script>
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <div class="ambient ambient-one" aria-hidden="true"></div>
+    <div class="ambient ambient-two" aria-hidden="true"></div>
+    <div class="ambient ambient-three" aria-hidden="true"></div>
+
+    <main class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="/" aria-label="The Clover Print thoughts home">
+          <span class="clover" aria-hidden="true">✿</span>
+          <span class="brand-name">THE CLOVER PRINT</span>
+        </a>
+        <a
+          class="store-link"
+          id="storeLinkTop"
+          href="https://thecloverprint.in/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Explore the store <span aria-hidden="true">↗</span>
+        </a>
+      </header>
+
+      <section class="hero" aria-labelledby="pageTitle">
+        <p class="eyebrow">
+          <span class="eyebrow-dot"></span> A SMALL PAUSE, A NEW PERSPECTIVE
+        </p>
+        <h1 id="pageTitle">A thought for <span>where you are.</span></h1>
+        <p class="intro">
+          A little reminder for the day you're having.<br
+            class="desktop-break"
+          />
+          Take what you need. Leave the rest.
+        </p>
+      </section>
+
+      <section class="thought-wrap" aria-label="Random thought">
+        <article class="thought-card" id="thoughtCard">
+          <div class="card-topline">
+            <span class="thought-label"
+              ><span class="sparkle" aria-hidden="true">✦</span> THOUGHT TO
+              CARRY</span
+            >
+            <!--<span class="thought-number" id="thoughtNumber">THOUGHT 001</span>-->
+          </div>
+          <div class="card-content">
+            <p class="category" id="thoughtCategory">PERSPECTIVE</p>
+            <blockquote id="thoughtText" aria-live="polite">
+              Your next chapter doesn't need permission from your last one.
+            </blockquote>
+            <p class="thought-note" id="thoughtNote">
+              You can begin again without explaining why.
+            </p>
+          </div>
+          <div class="card-bottom">
+            <span class="card-mark" aria-hidden="true">✳</span>
+            <span class="card-signature">A LITTLE CLOVER NOTE</span>
+          </div>
+        </article>
+
+        <div class="controls">
+          <button class="primary-button" id="anotherButton" type="button">
+            <span class="button-icon" aria-hidden="true">↻</span> Give me
+            another thought
+          </button>
+          <button
+            class="icon-button"
+            id="copyButton"
+            type="button"
+            aria-label="Copy thought"
+            title="Copy thought"
+          >
+            <span aria-hidden="true">▢</span
+            ><span class="sr-only">Copy thought</span>
+          </button>
+          <button
+            class="icon-button"
+            id="shareButton"
+            type="button"
+            aria-label="Share thought"
+            title="Share thought"
+          >
+            <span aria-hidden="true">↗</span
+            ><span class="sr-only">Share thought</span>
+          </button>
+        </div>
+        <p
+          class="status-message"
+          id="statusMessage"
+          role="status"
+          aria-live="polite"
+        ></p>
+        <p class="refresh-hint">
+          OR SIMPLY REFRESH THIS PAGE FOR A NEW THOUGHT
+        </p>
+      </section>
+
+      <section class="closing-note">
+        <span class="closing-line" aria-hidden="true"></span>
+        <p>Wear your vibe. <span>Carry a thought.</span></p>
+        <a
+          class="text-link"
+          id="storeLinkBottom"
+          href="https://thecloverprint.in/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Find something that feels like you <span aria-hidden="true">↗</span>
+        </a>
+      </section>
+
+      <footer class="site-footer">
+        <span>© <span id="year"></span> THE CLOVER PRINT</span>
+        <span class="footer-dot" aria-hidden="true">•</span>
+        <span>MADE FOR YOUR EVERYDAY</span>
+      </footer>
+    </main>
+  </body>
+</html>
